@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AllLogingOptions">
+
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="InTouch"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/sign_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="Sign up"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:layout_below="@+id/title_text"/>
+
+    <Button
+        android:id="@+id/btn_signup_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/white"
+        android:background="@drawable/shapppe"
+        android:layout_marginRight="30dp"
+        android:text="Sign up with Phone"
+        android:layout_below="@+id/sign_text" />
+    <Button
+        android:id="@+id/btn_signup_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:background="@drawable/border_btns"
+        android:layout_marginRight="30dp"
+        android:text="Sign up with Email"
+        android:layout_below="@+id/btn_signup_phone" />
+
+    <Button
+        android:id="@+id/btn_signup_app"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/apple_icon"
+        android:gravity="center_vertical"
+        android:paddingLeft="85dp"
+        android:backgroundTint="@color/black"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/white"
+        android:background="@drawable/shapppe"
+        android:text=" Sign up with App"
+        android:layout_below="@+id/btn_signup_email" />
+    <Button
+        android:id="@+id/btn_signup_google"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:background="@drawable/border_btns"
+        android:drawableLeft="@drawable/icon_google"
+        android:text=" Sign up with Google"
+        android:paddingLeft="85dp"
+        android:layout_below="@+id/btn_signup_app" />
+
+    <Button
+        android:id="@+id/btn_logingwithphone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shapppe"
+        android:layout_marginRight="30dp"
+        android:text="Loging  with Phone"
+        android:layout_below="@+id/btn_signup_google" />
+
+
+</RelativeLayout>

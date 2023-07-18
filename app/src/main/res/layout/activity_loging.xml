@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LogingActivity">
+
+
+    <TextView
+        android:id="@+id/loging_title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:gravity="center_horizontal"
+        android:text="InTouch"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/loging_sign_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="Sign up"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:layout_below="@+id/loging_title_text"/>
+
+    <EditText
+        android:id="@+id/login_emaileditetext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@id/loging_sign_text"
+        android:background="@drawable/select_layoutbackground"
+        android:drawableStart="@drawable/icon_email"
+        android:drawablePadding="12dp"
+        android:hint="Email"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp" />
+
+    <EditText
+        android:id="@+id/loging_passwordeditetext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@id/login_emaileditetext"
+        android:background="@drawable/select_layoutbackground"
+        android:drawableStart="@drawable/icon_password"
+        android:drawablePadding="12dp"
+        android:hint="Password"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp" />
+
+    <TextView
+        android:id="@+id/btn_forgrt"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/loging_passwordeditetext"
+        android:text="Forrget"
+        android:textStyle="bold"
+        android:gravity="right"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_loging"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:layout_marginRight="30dp"
+        android:text="Loging"
+        android:background="@drawable/shapppe"
+        android:layout_below="@+id/btn_forgrt" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:visibility="gone"
+        android:layout_below="@+id/btn_loging"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
